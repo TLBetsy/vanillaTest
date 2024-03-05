@@ -12,15 +12,19 @@
             }
           },
     "auth": {
-      "identityProviders": {
-        "azureActiveDirectory": {
-          "registration": {
-            "openIdIssuer": "https://login.microsoftonline.com/583fa387-2f2d-414c-aa1f-2965789c7a89",
-            "a1403c73-c35a-4517-89cc-ecc0b07b67aa": "AADClientID",
-            "56z8Q~W5vU_lLE49fZM.pHe4wPM2gJzvlxzWlbuZ": "AADSecret"
-          },"userDetailsClaim": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"
-                }
+{
+  "auth": {
+    "identityProviders": {
+      "azureActiveDirectory": {
+        "userDetailsClaim": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+        "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/583fa387-2f2d-414c-aa1f-2965789c7a89",
+          "clientIdSettingName": "a1403c73-c35a-4517-89cc-ecc0b07b67aa",
+          "clientSecretSettingName": "a2c01ed0-818a-4d85-81dd-d4e1e21448fb"
+        }
       }
     }
   }
+}
+}
   
